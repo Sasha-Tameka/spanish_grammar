@@ -10,7 +10,30 @@
       <h1>Spanish Grammar Practice</h1>
       <p id="prompt" class="prompt">Loading Exercise...</p>
 
-      <button id="hint-btn">Show Hint</button>
+      <button id="hint-btn" type="button" class="hint-btn">Show Hint</button>
+      <p id="hint" class="hint" style="display: none"></p>
+
+      <form id="answer-form">
+        <input
+          type="text"
+          id="answer-input"
+          placeholder="Type the conjugation..."
+          autocomplete="off"
+        />
+        <button type="submit">Check</button>
+      </form>
+
+      <p id="feedback" class="feeback"></p>
+
+      <button id="next-btn" class="next-btn" style="display: none">
+        Next Question ->
+      </button>
+
+      <div class="score">
+        Score: <span id="score">0</span> / <span id="total">0</span>
+      </div>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
