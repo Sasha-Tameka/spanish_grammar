@@ -9,7 +9,7 @@ app.add_middleware(
     CORSMiddleware, 
     allow_origins=["*"], 
     allow_methods=["*"],
-    allow_header=["*"],
+    allow_headers=["*"],
 )
 
 class AnswerSubmission(BaseModel):
